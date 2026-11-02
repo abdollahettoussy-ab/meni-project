@@ -15,6 +15,8 @@
     <header class="all">
         <img src="img/logo.png" alt="logo" class="logoimg">
         <div>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="burger"> ☰</label>
             <nav class="nav">
                 <a href="#Acceuil">Acceuil</a>
                 <a href="#Services">Services</a>
@@ -30,48 +32,51 @@
         <section id="Services">
 
         </section>
-        <section id="Contact">
-            <h1>Contactez‑nous</h1>
-            <label for="Nom">Votre Nom</label>
-            <input type="text" id="name" name="name" required>
+        <section>
+            <form action="" id="Contact">
+                <h1>Contactez‑nous</h1>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
 
-            <label for="Email">Votre Email</label>
-            <input type="email" id="email" name="email" required>
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required
+                    pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Veuillez entrer une adresse Gmail valide">
 
-            <label for="Sujet">Sujet de message</label>
-            <input type="text" id="sujet" name="sujet" required>
+                <label for="Sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="Sujet de message" required>
 
-            <label for="text">Votre message</label>
-            <input id="message" name="message" rows="5" required>
-            <button class="btn" type="submit">Envoyer</button>
+                <label for="text">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="3" required></textarea>
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
-    <footer class="footer">
-        <div>
-            <img src="img/logo.png" alt="logo" class="logoimg">
-            <p>Marrakesh Travel Services - Your trusted partner for authentic Moroccan travel experiences and luxury
-                transportation.</p>
-            <div class="social-icons">
-                <a href="https://instagram.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
-                    aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
-                    aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://facebook.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
-                    aria-label="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
+    <footer>
+
+        <img src="img/logo.png" alt="logo" class="logoimg">
+        <p>Marrakesh Travel Services - Your trusted partner for authentic Moroccan travel experiences and luxury
+            transportation.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com/MarakechTravele" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+
         </div>
         <div class="info">
             <p>Nom de l'entreprise: Marrakech Travel</p>
             <p>Adresse: Marrakech, Maroc</p>
             <p>Téléphone: 0523619758/0532689547</p>
             <p>Responsable de publication:M.Ahmed Benany</p>
-           
+
 
         </div>
 

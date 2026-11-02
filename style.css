@@ -9,7 +9,7 @@
 }
 
 .nav {
-    gap: 10px;
+    gap: 1rem;
     font-size: large;
     text-decoration-color: #ECF0F1;
 
@@ -27,24 +27,26 @@
     flex-direction: column;
     margin-top: 50px;
     border: 2px solid #3498DB;
-    height: 500px;
-    gap: 10px;
-    border-radius: 20px;
+    height: 600px;
+    gap: 1rem;
+    border-radius: 4px;
     width: 600px;
 
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
-.btn{
-    
+
+.btn {
+    background-color: #E74C3C;
 }
 
 label {
     display: block;
     margin-top: 10px;
-    font-weight: bold;
+
 }
 
 input,
@@ -52,7 +54,7 @@ textarea {
     width: 60%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #3498DB;
     border-radius: 4px;
     box-sizing: border-box;
 
@@ -60,19 +62,23 @@ textarea {
 
 h1 {
     text-align: center;
+    font-family: var(h1);
+    font-weight: 700;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(176, 216, 227);
+    position: relative;
+    top: 444px;
 
 
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     padding: 20px;
 }
 
@@ -84,5 +90,39 @@ h1 {
 
 .social-icons a:hover {
     color: #949089;
+
+}
+
+@media (min-width:768px) {
+    .footer {
+        position: relative;
+        top: 444px;
+
+    }
+}
+@media (MAX-width:768px) {
     
+    #Contact{
+        position: relative;
+        left: 45px;
+        
+    }
+    .all{
+        width:550px;
+    }
+    footer{
+        width: 550px;
+    }
+     .burger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu:checked ~ nav {
+        display: flex;
+    }
 }
