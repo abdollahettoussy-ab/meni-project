@@ -92,6 +92,12 @@ footer {
     color: #949089;
 
 }
+.burger{
+    display: none;
+}
+#menu{
+    display: none;
+}
 
 @media (min-width:768px) {
     .footer {
